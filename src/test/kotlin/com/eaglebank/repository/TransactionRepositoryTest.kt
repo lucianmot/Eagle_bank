@@ -1,5 +1,6 @@
 package com.eaglebank.repository
 
+import com.eaglebank.config.TestJwtDecoderConfig
 import com.eaglebank.model.Account
 import com.eaglebank.model.Transaction
 import com.eaglebank.model.TransactionType
@@ -12,12 +13,14 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.context.annotation.Import
 import org.springframework.dao.DataIntegrityViolationException
 import org.springframework.test.annotation.DirtiesContext
 import org.springframework.transaction.annotation.Transactional
 import java.time.Instant
 import java.util.UUID
 
+@Import(TestJwtDecoderConfig::class)
 @SpringBootTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 @Transactional

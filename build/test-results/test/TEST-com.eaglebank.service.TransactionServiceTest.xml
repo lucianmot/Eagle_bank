@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.eaglebank.service.TransactionServiceTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-07-17T21:07:05.346Z" hostname="Mac" time="0.051">
+<testsuite name="com.eaglebank.service.TransactionServiceTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-07-18T04:52:48.125Z" hostname="Mac" time="0.073">
   <properties/>
   <testcase name="Then: the deposit increases the balance and creates a transaction" classname="com.eaglebank.service.TransactionServiceTest" time="0.002"/>
   <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
-  <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
-  <testcase name="Then: the withdrawal decreases the balance and creates a transaction" classname="com.eaglebank.service.TransactionServiceTest" time="0.002"/>
-  <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
   <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
+  <testcase name="Then: the withdrawal decreases the balance and creates a transaction" classname="com.eaglebank.service.TransactionServiceTest" time="0.002"/>
+  <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
+  <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
   <testcase name="Then: throws UnprocessableEntityException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
   <testcase name="Then: the transactions are returned" classname="com.eaglebank.service.TransactionServiceTest" time="0.002"/>
   <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
-  <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
+  <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
   <testcase name="Then: the transaction is returned" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
-  <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
+  <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.0"/>
   <testcase name="Then: throws ConflictException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
   <testcase name="Then: throws NotFoundException" classname="com.eaglebank.service.TransactionServiceTest" time="0.001"/>
-  <system-out><![CDATA[22:07:05.347 [pool-1-thread-1 @coroutine#10] INFO com.eaglebank.service.TransactionService -- User usr-123 deposited 40.0 to account 01234567
-22:07:05.353 [pool-1-thread-1 @coroutine#10] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
-22:07:05.358 [pool-1-thread-1 @coroutine#11] INFO com.eaglebank.service.TransactionService -- User usr-123 withdrew 80.0 from account 01234567
-22:07:05.364 [pool-1-thread-1 @coroutine#11] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
-22:07:05.366 [pool-1-thread-1 @coroutine#11] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to overdraw account 01234567
-22:07:05.375 [pool-1-thread-1 @coroutine#12] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
-22:07:05.394 [pool-1-thread-1 @coroutine#13] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
+  <system-out><![CDATA[05:52:48.126 [pool-1-thread-1 @coroutine#10] INFO com.eaglebank.service.TransactionService -- User usr-123 deposited 40.0 to account 01234567
+05:52:48.135 [pool-1-thread-1 @coroutine#10] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
+05:52:48.141 [pool-1-thread-1 @coroutine#11] INFO com.eaglebank.service.TransactionService -- User usr-123 withdrew 80.0 from account 01234567
+05:52:48.148 [pool-1-thread-1 @coroutine#11] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
+05:52:48.152 [pool-1-thread-1 @coroutine#11] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to overdraw account 01234567
+05:52:48.167 [pool-1-thread-1 @coroutine#12] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
+05:52:48.194 [pool-1-thread-1 @coroutine#13] WARN com.eaglebank.service.TransactionService -- User usr-123 attempted to access account 01234567 not owned by them
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

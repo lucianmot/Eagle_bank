@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.eaglebank.service.UserServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-07-17T21:07:05.401Z" hostname="Mac" time="0.02">
+<testsuite name="com.eaglebank.service.UserServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-07-18T04:52:48.204Z" hostname="Mac" time="0.044">
   <properties/>
-  <testcase name="Then: the user is created" classname="com.eaglebank.service.UserServiceTest" time="0.004"/>
+  <testcase name="Then: the user is created" classname="com.eaglebank.service.UserServiceTest" time="0.006"/>
   <testcase name="Then: a DuplicateUserException is thrown" classname="com.eaglebank.service.UserServiceTest" time="0.001"/>
   <testcase name="Then: the user is returned" classname="com.eaglebank.service.UserServiceTest" time="0.001"/>
   <testcase name="Then: null is returned" classname="com.eaglebank.service.UserServiceTest" time="0.0"/>
-  <testcase name="Then: a NotFoundException is thrown" classname="com.eaglebank.service.UserServiceTest" time="0.001"/>
-  <testcase name="Then: the user is updated" classname="com.eaglebank.service.UserServiceTest" time="0.0"/>
+  <testcase name="Then: a NotFoundException is thrown" classname="com.eaglebank.service.UserServiceTest" time="0.0"/>
+  <testcase name="Then: the user is updated" classname="com.eaglebank.service.UserServiceTest" time="0.002"/>
   <testcase name="Then: a ConflictException is thrown" classname="com.eaglebank.service.UserServiceTest" time="0.0"/>
-  <testcase name="Then: the user is deleted" classname="com.eaglebank.service.UserServiceTest" time="0.0"/>
-  <system-out><![CDATA[22:07:05.404 [pool-1-thread-1 @coroutine#14] INFO com.eaglebank.service.UserService -- Creating user with email=test@example.com
-22:07:05.407 [pool-1-thread-1 @coroutine#14] INFO com.eaglebank.service.UserService -- Creating user with email=test@example.com
-22:07:05.407 [pool-1-thread-1 @coroutine#14] WARN com.eaglebank.service.UserService -- Attempt to create duplicate user with email=test@example.com
-22:07:05.416 [pool-1-thread-1 @coroutine#16] INFO com.eaglebank.service.UserService -- Updated user: usr-123
-22:07:05.419 [pool-1-thread-1 @coroutine#17] WARN com.eaglebank.service.UserService -- User usr-123 attempted to delete but still has accounts.
-22:07:05.422 [pool-1-thread-1 @coroutine#17] INFO com.eaglebank.service.UserService -- Deleted user: usr-123
+  <testcase name="Then: the user is deleted" classname="com.eaglebank.service.UserServiceTest" time="0.001"/>
+  <system-out><![CDATA[05:52:48.210 [pool-1-thread-1 @coroutine#14] INFO com.eaglebank.service.UserService -- Creating user with email=test@example.com
+05:52:48.214 [pool-1-thread-1 @coroutine#14] INFO com.eaglebank.service.UserService -- Creating user with email=test@example.com
+05:52:48.214 [pool-1-thread-1 @coroutine#14] WARN com.eaglebank.service.UserService -- Attempt to create duplicate user with email=test@example.com
+05:52:48.237 [pool-1-thread-1 @coroutine#16] INFO com.eaglebank.service.UserService -- Updated user: usr-123
+05:52:48.245 [pool-1-thread-1 @coroutine#17] WARN com.eaglebank.service.UserService -- User usr-123 attempted to delete but still has accounts.
+05:52:48.248 [pool-1-thread-1 @coroutine#17] INFO com.eaglebank.service.UserService -- Deleted user: usr-123
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
